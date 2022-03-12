@@ -1,0 +1,533 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-image: url(./img/AQUA052.JPG);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: opacity(98%);
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+span{
+color: rgba(255, 123, 0, 0.6);
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ padding: 2px;
+ background-color: rgb(8, 8, 8);
+ color: rgb(173, 173, 173);
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+ justify-content: flex-start;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+ align-items: center;
+}
+.menu li:hover {
+ background-color: rgba(255, 123, 0, 0);
+ border-radius: 5px;
+ transition: 0.3s ease;
+ transform: translateX(-1%) scale(1);
+}
+.menu li:hover:after {
+	transform: translateX(-50%) scale(1);
+}
+.menu li:after {
+	content: '';
+	position: absolute;
+	width: 5rem;
+	height: .2rem;
+	background-color: rgba(255, 123, 0, 0.712);
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	bottom: 0;
+}
+
+
+
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.navbar-services {
+ position: relative; 
+}
+.dropdown {
+ background-color: rgba(34, 24, 16, 0.76);
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 31px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: rgba(24, 19, 13, 0.8);
+}
+.navbar-services:hover .dropdown {
+ display: block;
+}
+
+
+/* Hero Section */
+.hero {
+	min-height: 80vh;
+	width: 100%;
+	padding-top: 50px;
+	justify-content: center;
+	background-image: url() ;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.726);
+}
+.hero .hero-info {
+	width: 100%;
+	text-align: center;
+}
+.hero .hero-info .hero-info-heading {
+	font-size: 4.5rem;
+	font-weight: 500;
+	color: rgba(245, 245, 245, 0.836);
+}
+.hero-info-heading{
+	font-size: 5rem;
+}
+.hero .hero-info .hero-info-subheading {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	color: whitesmoke;
+}
+.hero .hero-info .hero-info-button { /*--display none--*/
+	margin-top: 30px;
+	padding: 2rem 5rem;
+	display: inline-block;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	letter-spacing: .6rem;
+	background-color: rgba(85, 85, 85, 0.534);
+	display: none;
+}
+/* End Hero Section */
+
+/* About Section  */
+.about {
+	width: 100%;
+	min-height: 50vh;
+	padding: 10rem 5rem;
+	flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.726);
+    display: flex;
+
+}
+.about .about-info {
+	text-align: center;
+
+    
+}
+.about .about-info .about-info-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-align: center;
+	color: rgba(255, 123, 0, 0.6);
+}
+.about .about-info .about-info-desc {
+	font-size: 1.7rem;
+	text-align: center;
+	line-height: 2rem;
+	margin-top: 10px;
+	color: rgba(240, 255, 255, 0.801);
+    padding: 0 20%;
+}
+.about .about-info .about-info-button {
+	padding: 1.6rem 2.6rem;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.548);
+	color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.about .about-info .about-info-button, button[disable]{
+  background: none;
+  color: none ;
+  cursor: auto;
+}
+/* End About Section  */
+
+/* Services section  */
+.services {
+	flex-direction: column;
+	min-height: 60vh;
+	padding: 10rem 5rem;
+	background-color: rgba(0, 0, 0, 0.726);
+	margin: 0%;
+}
+.services .services-header {
+	width: 100%;
+	text-align: center;
+}
+.services .services-header .services-header-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255, 123, 0, 0.6);
+}
+.services .services-header .services-header-desc {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin-top: 20px;
+	color: rgba(240, 255, 255, 0.432);
+}
+.wuc1{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	filter: opacity(80%);
+}
+.flex-container{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 10px;
+  border-radius: 30px;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.class-h1{
+	display: flex;
+	justify-content: center;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(109, 109, 109, 0.473);
+  color: rgba(39, 11, 83, 0.678);
+  text-shadow: 0px 0px 20px rgba(247, 182, 43, 0.808);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(135, 136, 136, 0.404);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 30px;
+}
+/* End Services section  */
+
+
+/* start Ability Section  */  
+
+.skill{
+    display: flex;
+    flex-direction: column;
+	min-height: 60vh;
+	padding: 10rem 5rem;
+	background-color: rgba(0, 0, 0, 0.726);
+	margin: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.skill .skill-header{
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	font-size: 4rem;
+}
+.skill .skill-header .skill-header-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255, 123, 0, 0.6);
+}
+
+   .container3 {
+      width: 60%;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+   }
+   .skill-bar{
+       margin: 10px;
+       align-content: center;
+   }
+   .skill-bar img{
+       width: 100px;
+       height: auto;
+
+   }
+   .container5{
+       width: 100%;
+       color: #fff;
+       display: flex;
+       flex-direction: column;
+   }
+   .container5 h3{
+       align-self: center;
+       color: rgba(255, 190, 130, 0.6);
+
+   }
+   .html5, .css3, .bootstrap, .sass, .javascript {
+      text-align: center;
+      font-weight: bolder;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      color: rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      background-color: #c0c5ca00;
+      width: 100%;
+      align-content: center;
+      background-image: linear-gradient(to right, #00000086,  #ec6a00);
+
+      
+   }
+    .html5 {
+      width: 80%;
+   }
+
+   .css3 {
+      width: 70%;
+   }
+   .bootstrap {
+      width: 50%;
+   }
+   .sass {
+      width: 40%;
+   }
+   .javascript {
+      width: 10%;
+
+   }
+
+/* Finish  Ability Section  */
+
+
+
+
+
+
+
+
+/* Start Contact Section  */
+.contact {
+	flex-direction: column;
+	min-height: 60vh;
+	padding: 10rem 5rem;
+	background-color: rgba(0, 0, 0, 0.726);
+	margin: 0%;
+}
+.contact .contact-header{
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	font-size: 4rem;
+}
+.contact .contact-header .contact-header-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255, 123, 0, 0.6);
+}
+form { 
+	max-width:420px; margin:50px auto;
+ }
+.feedback-input {
+  color:rgba(255, 255, 255, 0.5);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid rgba(255, 123, 0, 0.6);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:rgba(255, 123, 0, 0.6); }
+/* End Contact Section  */
+
+/* Footer section  */
+.footer {
+	display: flex;
+	height: auto;
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+	color: rgba(255, 123, 0, 0.6);
+	flex-direction: row ;
+	text-align: center;
+	padding: 0.8rem;
+    justify-content: center;
+}
+.footer .footer-social-follow .footer-social-icon a {
+	color: rgba(253, 253, 253, 0.6);
+	font-size: 3rem;
+	margin: .4rem;
+	display: inline-block;
+}
+/* End Footer section  */
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:rgba(3, 3, 3, 0.877);
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#9e884c;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #9e8f4c;
+}
+}
+
+

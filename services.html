@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>portfolio-service</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+
+<body>
+    <section id="nav-bar" class="container">
+
+
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"><img src="./img/logo.png" alt="" height="auto" width="120px"></div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skill">Skill</a></li>
+
+                    <li class="navbar-services">
+                        <a href="services.html">Services</a>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="#full-stack">Full Stack </a></li>
+                            <li><a href="#front-end">Front End</a></li>
+                            <li><a href="#back-end">Back End</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </section><!-- End nav-bar  -->
+
+
+
+ <!-- Service Section  -->
+    <section id="services" class="services container">
+       
+        <div class="services-header">
+            <h1 class="services-header-heading">services</h1>
+            <p class="services-header-desc">not yet ready.</p>
+        </div>
+        
+
+        <div class="flex-container">
+            <div id="full-stack">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Full Stack </h1>
+                        <p></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/wuc1.png" alt="" class="wuc1">
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="front-end">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Front End</h1>
+                        <p></p>
+                    </div>
+                    <div class="flip-card-back">
+                       <img src="./img/wuc1.png" alt="" class="wuc1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back-end">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Back End</h1>
+                        <p></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/wuc1.png" alt="" class="wuc1">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section><!-- End Service Section  -->
+
+    <section id="contact" class="contact container"><!-- Start Contact Section  -->
+        
+        <div class="contact-header">
+            <h1 class="contact-header-heading">contact me</h1>
+        </div>
+        <form>
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT" />
+        </form>
+    </section><!-- End Contact Section  -->
+
+    <footer id="footer" class="footer container"><!-- Footer section  -->
+        
+        <div class="footer-social-follow">
+            <h1 class="footer-social-follow-heading">Follow Me</h1>
+            <div class="footer-social-icon">
+                <a href="https://www.facebook.com/salvatore.pedone.9" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://github.com/pedsal" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer section  -->
+
+
+
+
+</body>
+
+</html>
